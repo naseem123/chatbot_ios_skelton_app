@@ -6,14 +6,38 @@
 //
 
 import UIKit
+import ChatBotSDK_v2
+
+
+
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+    
+    
+    let configuration = ChatBotConfiguration(
+        appId: "yB9BJmrcH3bM4CShtMKB5qrw",
+        baseUrl: "test.ca.digital-front-door.stg.gcp.trchq.com",
+        originURL: "test.ca.digital-front-door.stg.gcp.trchq.com"
+    )
+    
+    var chatBotSdk:ChatBotSdk?
+    
+    override func viewDidLoad()  {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        chatBotSdk = ChatBotSdk(configuration: configuration, viewController: self);
     }
+    
+    @IBAction func btnClicked(_ sender: Any) {
+        chatBotSdk = ChatBotSdk(configuration: configuration, viewController: self);
+        chatBotSdk?.openBot()
+    }
+    
 
+    //
+    
 
+    
+    
 }
+
 
