@@ -69,11 +69,14 @@
                                     <constraint firstAttribute="width" constant="78" id="bT3-kW-zS5"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ctQ-yz-p8V">
+                                <rect key="frame" x="0.0" y="-10" width="393" height="872"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTg-Kj-ahV">
-                                <rect key="frame" x="270" y="726" width="80" height="98"/>
+                                <rect key="frame" x="150.66666666666666" y="725" width="92" height="127"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="JuX-6o-1yO"/>
-                                    <constraint firstAttribute="width" constant="80" id="Sow-C1-Ii0"/>
+                                    <constraint firstAttribute="width" constant="92" id="Rbh-aP-NED"/>
+                                    <constraint firstAttribute="height" constant="127" id="yTu-72-a5l"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -81,20 +84,17 @@
                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="soB-Dw-91v"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chatbot Skeltop App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="535-py-nI3">
-                                <rect key="frame" x="115" y="200" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vTg-Kj-ahV" secondAttribute="trailing" constant="43" id="0nk-3I-rkW"/>
+                            <constraint firstItem="vTg-Kj-ahV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Tb-V2-HRt"/>
+                            <constraint firstItem="ctQ-yz-p8V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-10" id="7S4-Gy-H0C"/>
+                            <constraint firstAttribute="bottom" secondItem="vTg-Kj-ahV" secondAttribute="bottom" id="AO8-E2-cnk"/>
+                            <constraint firstAttribute="bottom" secondItem="ctQ-yz-p8V" secondAttribute="bottom" constant="-10" id="EFA-9R-kCf"/>
+                            <constraint firstItem="ctQ-yz-p8V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pim-Pk-JIE"/>
+                            <constraint firstItem="ctQ-yz-p8V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S7g-gJ-qb2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LUj-Bx-5vL" secondAttribute="trailing" constant="45" id="T2L-LQ-pX4"/>
-                            <constraint firstAttribute="bottom" secondItem="vTg-Kj-ahV" secondAttribute="bottom" constant="28" id="V8E-6B-m76"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LUj-Bx-5vL" secondAttribute="bottom" constant="16" id="daU-Ct-PTL"/>
                         </constraints>
                     </view>
@@ -107,6 +107,7 @@
     </scenes>
     <resources>
         <image name="Untitled" width="600" height="600"/>
+        <image name="bg" width="1078" height="2304"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
