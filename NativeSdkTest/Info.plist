@@ -25,5 +25,15 @@
         <false/>
         <key>CFBundleDisplayName</key>
         <string>ThinkResearch Chatbot</string>
+        <key>NSAppTransportSecurity</key>
+        <dict>
+            <key>NSAllowsArbitraryLoads</key><true/>
+        </dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSAllowsArbitraryLoadsInWebContent</key>
+        <true/>
+        
     </dict>
+    
 </plist>
